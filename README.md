@@ -1,10 +1,10 @@
 # Terraform AWS EC2 VPC Infrastructure
 
-Terraform-based AWS infrastructure project that provisions a custom VPC, public subnets, Internet Gateway, route tables, security groups, and an EC2 instance.
+Terraform-based AWS infrastructure project that provisions a custom VPC, public subnets, an Internet Gateway, route tables, security groups, and an EC2 instance.
 
 ## Overview
 
-This project demonstrates how to provision foundational AWS infrastructure using Terraform and Infrastructure as Code (IaC). It creates a basic but practical cloud environment that can be used as a starting point for deploying applications or learning AWS networking and compute provisioning.
+This project demonstrates how to provision foundational AWS infrastructure using Terraform and Infrastructure as Code (IaC). It creates a practical cloud environment that can be used for learning, testing, and showcasing AWS networking and compute provisioning skills.
 
 ## Infrastructure Provisioned
 
@@ -78,7 +78,7 @@ Before using this project, make sure you have:
 - An AWS account
 - Terraform installed
 - AWS CLI installed and configured
-- IAM credentials with permissions to create VPC, subnet, route tables, security groups, and EC2 resources
+- IAM credentials with permissions to create VPC, subnets, route tables, security groups, and EC2 resources
 
 ## How to Use
 
@@ -127,7 +127,7 @@ terraform destroy
 
 - Do not commit `terraform.tfstate` or `terraform.tfstate.backup`
 - Do not commit AWS access keys, secret keys, or private keys
-- Use `.gitignore` to exclude local state and other sensitive files
+- Use `.gitignore` to exclude local state and sensitive files
 - Use a remote backend such as Amazon S3 with state locking for production-grade workflows
 
 ## Possible Improvements
@@ -142,20 +142,41 @@ Future enhancements for this project may include:
 
 ## Project Screenshots
 
-### Infrastructure Screenshots
+### Screenshot 1
+![Screenshot 1](images/image1.png)
 
-![Project Screenshot 1](images/image1.png)
-![Project Screenshot 2](images/image2.png)
-![Project Screenshot 3](images/image3.png)
-![Project Screenshot 4](images/image4.png)
-![Project Screenshot 5](images/image5.png)
-![Project Screenshot 6](images/image6.png)
-![Project Screenshot 7](images/image7.png)
-![Project Screenshot 8](images/image8.png)
-![Project Screenshot 9](images/image9.png)
-![Project Screenshot 10](images/image10.png)
-![Project Screenshot 11](images/image11.png)
-![Project Screenshot 12](images/image12.png)
+### Screenshot 2
+![Screenshot 2](images/image2.png)
+
+### Screenshot 3
+![Screenshot 3](images/image3.png)
+
+### Screenshot 4
+![Screenshot 4](images/image4.png)
+
+### Screenshot 5
+![Screenshot 5](images/image5.png)
+
+### Screenshot 6
+![Screenshot 6](images/image6.png)
+
+### Screenshot 7
+![Screenshot 7](images/image7.png)
+
+### Screenshot 8
+![Screenshot 8](images/image8.png)
+
+### Screenshot 9
+![Screenshot 9](images/image9.png)
+
+### Screenshot 10
+![Screenshot 10](images/image10.png)
+
+### Screenshot 11
+![Screenshot 11](images/image11.png)
+
+### Screenshot 12
+![Screenshot 12](images/image12.png)
 
 ## Release
 
