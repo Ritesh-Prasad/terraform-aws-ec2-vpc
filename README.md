@@ -1,19 +1,20 @@
 # Terraform AWS EC2 VPC Infrastructure
 
-Terraform project that provisions AWS infrastructure including a custom VPC, public subnets, an Internet Gateway, route tables, security groups, and an EC2 instance.
+Terraform-based AWS infrastructure project that provisions a custom VPC, public subnets, Internet Gateway, route tables, security groups, and an EC2 instance.
 
 ## Overview
 
-This project demonstrates how to build foundational AWS infrastructure using Terraform and Infrastructure as Code (IaC) practices. It is designed to provision a basic network and compute environment on AWS in a structured and reusable way.
+This project demonstrates how to provision foundational AWS infrastructure using Terraform and Infrastructure as Code (IaC). It creates a basic but practical cloud environment that can be used as a starting point for deploying applications or learning AWS networking and compute provisioning.
 
 ## Infrastructure Provisioned
 
-This project creates:
+This project creates the following AWS resources:
 
-- A custom AWS VPC
+- Custom VPC
 - Public subnets
 - Internet Gateway
-- Route tables and route table associations
+- Route tables
+- Route table associations
 - Security groups
 - EC2 instance
 - Output values for provisioned resources
@@ -24,6 +25,7 @@ This project creates:
 .
 ├── .gitignore
 ├── .terraform.lock.hcl
+├── README.md
 ├── associated_rtb.tf
 ├── ec2.tf
 ├── igw.tf
@@ -33,7 +35,20 @@ This project creates:
 ├── sg.tf
 ├── subnets.tf
 ├── variable.tf
-└── vpc.tf
+├── vpc.tf
+└── images/
+    ├── image1.png
+    ├── image2.png
+    ├── image3.png
+    ├── image4.png
+    ├── image5.png
+    ├── image6.png
+    ├── image7.png
+    ├── image8.png
+    ├── image9.png
+    ├── image10.png
+    ├── image11.png
+    └── image12.png
 ```
 
 ## File Purpose
@@ -63,7 +78,7 @@ Before using this project, make sure you have:
 - An AWS account
 - Terraform installed
 - AWS CLI installed and configured
-- IAM credentials with permissions to create VPC, subnet, route table, security group, and EC2 resources
+- IAM credentials with permissions to create VPC, subnet, route tables, security groups, and EC2 resources
 
 ## How to Use
 
@@ -111,9 +126,9 @@ terraform destroy
 ## Security Best Practices
 
 - Do not commit `terraform.tfstate` or `terraform.tfstate.backup`
-- Do not commit AWS credentials, access keys, or private keys
-- Use `.gitignore` to exclude local state and sensitive files
-- Prefer remote state storage such as Amazon S3 with state locking for production-grade Terraform workflows
+- Do not commit AWS access keys, secret keys, or private keys
+- Use `.gitignore` to exclude local state and other sensitive files
+- Use a remote backend such as Amazon S3 with state locking for production-grade workflows
 
 ## Possible Improvements
 
@@ -122,8 +137,25 @@ Future enhancements for this project may include:
 - Remote backend using S3 and DynamoDB
 - Reusable Terraform modules
 - Private subnets and NAT Gateway
-- Output documentation with architecture diagram
-- GitHub Actions workflow for `terraform fmt`, `validate`, and `plan`
+- Architecture diagram documentation
+- GitHub Actions workflow for `terraform fmt`, `terraform validate`, and `terraform plan`
+
+## Project Screenshots
+
+### Infrastructure Screenshots
+
+![Project Screenshot 1](images/image1.png)
+![Project Screenshot 2](images/image2.png)
+![Project Screenshot 3](images/image3.png)
+![Project Screenshot 4](images/image4.png)
+![Project Screenshot 5](images/image5.png)
+![Project Screenshot 6](images/image6.png)
+![Project Screenshot 7](images/image7.png)
+![Project Screenshot 8](images/image8.png)
+![Project Screenshot 9](images/image9.png)
+![Project Screenshot 10](images/image10.png)
+![Project Screenshot 11](images/image11.png)
+![Project Screenshot 12](images/image12.png)
 
 ## Release
 
@@ -133,16 +165,3 @@ Current version: `v1.0.0`
 
 **Ritesh Prasad**  
 Cloud and DevOps Engineer
-
-<img src="images/image1.png" alt="projects" width="800">
-<img src="images/image2.png" alt="projects" width="800">
-<img src="images/image3.png" alt="projects" width="800">
-<img src="images/image4.png" alt="projects" width="800">
-<img src="images/image5.png" alt="projects" width="800">
-<img src="images/image6.png" alt="projects" width="800">
-<img src="images/image7.png" alt="projects" width="800">
-<img src="images/image8.png" alt="projects" width="800">
-<img src="images/image9.png" alt="projects" width="800">
-<img src="images/image10.png" alt="projects" width="800">
-<img src="images/image11.png" alt="projects" width="800">
-<img src="images/image12.png" alt="projects" width="800">
